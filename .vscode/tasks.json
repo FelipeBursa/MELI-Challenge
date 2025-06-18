@@ -1,0 +1,17 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run EC2 Manager API",
+			"type": "shell",
+			"command": "\"/Users/felipebursagranade/Development/meli test/.venv/bin/python\"",
+			"args": [
+				"-m",
+				"src.app"
+			],
+			"group": "build",
+			"isBackground": true,
+			"problemMatcher": []
+		}
+	]
+}
