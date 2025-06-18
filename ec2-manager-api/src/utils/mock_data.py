@@ -1,6 +1,6 @@
 from datetime import datetime, timezone
 from typing import List
-from src.models.instance import EC2Instance, InstanceState, InstanceType, AWSRegion
+from src.models import EC2Instance, InstanceState, InstanceType, AWSRegion
 
 
 def get_mock_instances() -> List[EC2Instance]:

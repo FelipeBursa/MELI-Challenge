@@ -1,7 +1,7 @@
 import pytest
 from unittest.mock import Mock, patch
 from src.services.ec2_service import EC2Service
-from src.models.instance import InstanceState, InstanceType, AWSRegion
+from src.models import InstanceState, InstanceType, AWSRegion
 from src.utils.mock_data import MOCK_INSTANCES_DB
 
 

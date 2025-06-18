@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException, status
 from typing import List
-from src.models.instance import EC2Instance, StopInstanceResponse, ErrorResponse
+from src.models import EC2Instance, StopInstanceResponse, ErrorResponse
 from src.services.ec2_service import ec2_service
 import logging
 

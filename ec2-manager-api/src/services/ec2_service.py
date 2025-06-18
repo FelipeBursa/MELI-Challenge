@@ -1,7 +1,7 @@
 import boto3
 from typing import List, Optional
 from moto import mock_ec2
-from src.models.instance import (
+from src.models import (
     EC2Instance, 
     InstanceState, 
     InstanceType, 
@@ -30,14 +30,10 @@ class EC2Service:
     def get_all_instances(self) -> List[EC2Instance]:
         """
         Retorna todas las instancias EC2 simuladas
-        
-        Returns:
-            List[EC2Instance]: Lista de instancias EC2
         """
         try:
             logger.info("Fetching all EC2 instances")
             instances = list(MOCK_INSTANCES_DB.values())
-            logger.info(f"Found {len(instances)} instances")
             return instances
         except Exception as e:
             logger.error(f"Error fetching instances: {str(e)}")
