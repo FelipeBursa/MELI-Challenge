@@ -29,14 +29,7 @@ app = FastAPI(
     
     Utiliza datos mock y simula las respuestas de AWS EC2.
     """,
-    version="1.0.0",
-    contact={
-        "name": "DBA Team",
-        "email": "dba-team@company.com",
-    },
-    license_info={
-        "name": "MIT",
-    },
+    
 )
 
 # Configurar CORS
